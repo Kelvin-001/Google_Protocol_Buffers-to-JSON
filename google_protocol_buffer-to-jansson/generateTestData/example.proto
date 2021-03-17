@@ -1,0 +1,32 @@
+syntax = "proto2"; //use protobuf2
+package ucas; //package name   
+message Person {
+	required string name = 1;    //person's name
+	required int32 id = 2;
+	optional string email = 3;
+
+	enum PhoneType {
+		MOBILE = 0;
+		HOME = 1;
+		WORK = 2;
+	}
+
+	message PhoneNumber {
+		required string number = 1;
+		optional PhoneType type = 2 [default = HOME];
+	}
+
+	repeated PhoneNumber phone = 4;
+}
+
+message Kinsfolk {
+    optional string name = 1;
+    optional int32 age = 2;
+}
+
+message Test {
+    optional string name = 1;
+    optional int32 age = 2;
+    repeated string phones = 3;
+    repeated Kinsfolk kinsfolks = 4;
+}

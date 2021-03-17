@@ -1,0 +1,146 @@
+syntax = "proto2"; //use protobuf2
+package ucas; //package name   
+
+message xxx1{}
+message xxx2{}
+message xxx3{}
+message xxx4{}
+message xxx5{}
+message xxx6{}
+message xxx7{}
+message xxx8{}
+message xxx9{}
+message xxx10{}
+
+message Person {
+	required int32 id1 = 1;
+	required int32 id2 = 2;
+	required int32 id3 = 3;
+	required int32 id4 = 4;
+	required int32 id5 = 5;
+	required int32 id6 = 6;
+	required int32 id7 = 7;
+	required int32 id8 = 8;
+	required int32 id9 = 9;
+	required int32 id10 = 10;
+	optional int32 id11 = 11;
+	optional int32 id12 = 12;
+	optional int32 id13 = 13;
+	optional int32 id14 = 14;
+	optional int32 id15 = 15;
+	optional int32 id16 = 16;
+	optional int32 id17 = 17;
+	optional int32 id18 = 18;
+	optional int32 id19 = 19;
+	optional int32 id20 = 20;
+	optional int32 id21 = 21;
+	optional int32 id22 = 22;
+	optional int32 id23 = 23;
+	optional int32 id24 = 24;
+	optional int32 id25 = 25;
+	optional int32 id26 = 26;
+	optional int32 id27 = 27;
+	optional int32 id28 = 28;
+	optional int32 id29 = 29;
+	optional int32 id30 = 30;
+	optional int32 id31 = 31;
+	optional int32 id32 = 32;
+	optional int32 id33 = 33;
+	optional int32 id34 = 34;
+	optional int32 id35 = 35;
+	optional int32 id36 = 36;
+	optional int32 id37 = 37;
+	optional int32 id38 = 38;
+	optional int32 id39 = 39;
+	optional int32 id40 = 40;
+	optional int32 id41 = 41;
+	optional int32 id42 = 42;
+	optional int32 id43 = 43;
+	optional int32 id66 = 44;
+	optional int32 id45 = 45;
+	optional int32 id46 = 46;
+	optional int32 id47 = 47;
+	optional int32 id48 = 48;
+	optional int32 id49 = 49;
+	optional int32 id50 = 50;
+	optional int32 id51 = 51;
+	optional int32 id52 = 52;
+	optional int32 id53 = 53;
+	optional int32 id54 = 54;
+	optional int32 id55 = 55;
+	optional int32 id56 = 56;
+	optional int32 id57 = 57;
+	optional int32 id58 = 58;
+	optional int32 id59 = 59;
+	optional int32 id60 = 60;
+	optional int32 id61 = 61;
+	optional int32 id62 = 62;
+	optional int32 id63 = 63;
+	optional int32 id64 = 64;
+	optional int32 id65 = 65;
+
+	required int32 id44 = 66;
+
+	optional int32 id67 = 67;
+	optional int32 id68 = 68;
+	optional int32 id69 = 69;
+	optional int32 id70 = 70;
+	optional int32 id71 = 71;
+	optional int32 id72 = 72;
+	optional int32 id73 = 73;
+	optional int32 id74 = 74;
+	optional int32 id75 = 75;
+	optional int32 id76 = 76;
+	optional int32 id77 = 77;
+	optional int32 id78 = 78;
+	optional int32 id79 = 79;
+	optional int32 id80 = 80;
+	optional int32 id81 = 81;
+	optional int32 id82 = 82;
+	optional int32 id83 = 83;
+	optional int32 id84 = 84;
+	optional int32 id85 = 85;
+	optional int32 id86 = 86;
+	optional int32 id87 = 87;
+	optional int32 id88 = 88;
+	optional int32 id89 = 89;
+	required int32 id90 = 90;
+	required int32 id91 = 91;
+	required int32 id92 = 92;
+	required int32 id93 = 93;
+	required int32 id94 = 94;
+	required int32 id95 = 95;
+	required int32 id96 = 96;
+	required int32 id97 = 97;
+	required int32 id98 = 98;
+	required int32 id99 = 99;
+	required int32 id100 = 100;
+
+	required string name = 101;  //person's name
+	optional string email = 102;
+	enum PhoneType {
+		MOBILE = 0;
+		HOME = 1;
+		WORK = 2;
+	}
+
+	message PhoneNumber {
+		required string number = 1;
+		optional PhoneType type = 2 [default = HOME];
+	}
+	repeated PhoneNumber phone = 103;
+	
+	required int32 id104 = 104;
+}
+
+message Kinsfolk {
+    optional string name = 1;
+    optional int32 age = 2;
+}
+
+message Test {
+    optional string name = 1;
+    optional int32 age = 2;
+    repeated string phones = 3;
+    repeated Kinsfolk kinsfolks = 4;
+}

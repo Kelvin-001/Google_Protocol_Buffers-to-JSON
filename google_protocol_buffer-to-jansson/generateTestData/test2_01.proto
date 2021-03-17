@@ -1,0 +1,142 @@
+syntax = "proto2"; //use protobuf2 //pro3 wrong
+package ucas; //package name   
+
+message xxx1{
+    	optional int32 id = 1;
+    	optional string type = 2;
+}
+message xxx2{
+	optional int32 id = 1;
+}
+message xxx3{
+	optional int32 id = 1;
+}
+message xxx4{
+	optional int32 id = 1;
+}
+message xxx5{
+	optional int32 id = 1;
+}
+message xxx6{
+	optional int32 id = 1;
+}
+message xxx7{
+	optional int32 id = 1;
+}
+message xxx8{
+	optional int32 id = 1;
+}
+message xxx9{
+	optional int32 id = 1;
+}
+message xxx10{
+        required int32 id = 1;
+}
+message xxx11{
+        optional int32 id = 1;
+}
+message xxx12{
+        optional int32 id = 1;
+}
+message xxx13{
+        optional int32 id = 1;
+}
+message xxx14{
+        optional int32 id = 1;
+}
+message xxx15{
+        optional int32 id = 1;
+}
+message xxx16{
+        optional int32 id = 1;
+}
+message xxx17{
+        optional int32 id = 1;
+}
+message xxx18{
+        optional int32 id = 1;
+}
+message xxx19{
+        optional int32 id = 1;
+}
+message xxx20{
+        required int32 id = 1;
+}
+message xxx21{
+        optional int32 id = 1;
+}
+message xxx23{
+        optional int32 id = 1;
+}
+message xxx22{
+        optional int32 id = 1;
+}
+message xxx24{
+        required int32 id = 1;
+}
+message xxx25{
+        optional int32 id = 1;
+}
+message xxx26{
+        optional int32 id = 1;
+}
+
+message UCASUCAS{
+        required int32 id = 1;
+	optional string name = 2;
+    	optional int32 age = 3;
+    	repeated string phones = 4;
+    	//repeated Kinsfolk kinsfolks = 4;
+}
+message UCAS2{
+        required int32 id = 1;
+        optional string name = 2;
+        optional int32 age = 3;
+        repeated string phones = 4;
+        //repeated Kinsfolk kinsfolks = 4;
+}
+message UCAS3{
+        required int32 id = 1;
+        optional string name = 2;
+        optional int32 age = 3;
+        repeated string phones = 4;
+        //repeated Kinsfolk kinsfolks = 4;
+}
+message UCAS4{
+        required int32 id = 1;
+        optional string name = 2;
+        optional int32 age = 3;
+        repeated string phones = 4;
+        //repeated Kinsfolk kinsfolks = 4;
+}
+
+
+message Person {
+ 	required int32 id = 1;
+	required string name = 101;  //person's name
+	optional string email = 102;
+	enum PhoneType {
+		MOBILE = 0;
+		HOME = 1;
+		WORK = 2;
+	}
+
+	message PhoneNumber {
+		required string number = 1;
+		optional PhoneType type = 2 [default = HOME];
+	}
+	repeated PhoneNumber phone = 103;
+	
+}
+
+message Kinsfolk {
+    optional string name = 1;
+    optional int32 age = 2;
+}
+
+message Test {
+    optional string name = 1;
+    optional int32 age = 2;
+    repeated string phones = 3;
+    repeated Kinsfolk kinsfolks = 4;
+}
