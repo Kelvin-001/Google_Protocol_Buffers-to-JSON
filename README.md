@@ -1,4 +1,4 @@
-# google_protocol_buffer-to-jansson
+# Google_Protocol_Buffers-to-JSON
 
 使用方法：
 这里假设你已经安装好了protobuf, 2.X与3.X均可。
